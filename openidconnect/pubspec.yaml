@@ -1,6 +1,6 @@
 name: openidconnect
 description: OpenIdConnect library for flutter.
-version: 1.0.21
+version: 1.0.22
 homepage: https://github.com/Concerti-IO/openidconnect_flutter
 
 environment:
@@ -12,8 +12,17 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  openidconnect_platform_interface: ^1.0.11
-  openidconnect_web: ^1.0.19
+  openidconnect_platform_interface:
+    git:
+      url: https://github.com/Bravo-XWB/openidconnect_flutter
+      path: openidconnect_platform_interface
+      version: ^1.0.11
+  openidconnect_web:
+    git:
+      url: https://github.com/Bravo-XWB/openidconnect_flutter
+      path: openidconnect_web
+      version: ^1.0.19
+
   # openidconnect_windows: ^0.0.6
   flutter_secure_storage: ^5.0.2
   jwt_decoder: ^2.0.1

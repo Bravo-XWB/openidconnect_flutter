@@ -197,20 +197,24 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "1.0.21"
+    version: "1.0.22"
   openidconnect_platform_interface:
     dependency: transitive
     description:
-      name: openidconnect_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: openidconnect_platform_interface
+      ref: HEAD
+      resolved-ref: bf8d34ef853c19670b820fe0ec0e25fc070b8522
+      url: "https://github.com/Bravo-XWB/openidconnect_flutter"
+    source: git
     version: "1.0.11"
   openidconnect_web:
     dependency: transitive
     description:
-      name: openidconnect_web
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: openidconnect_web
+      ref: HEAD
+      resolved-ref: bf8d34ef853c19670b820fe0ec0e25fc070b8522
+      url: "https://github.com/Bravo-XWB/openidconnect_flutter"
+    source: git
     version: "1.0.19"
   path:
     dependency: transitive
