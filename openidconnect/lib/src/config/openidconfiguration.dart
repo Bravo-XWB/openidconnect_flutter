@@ -54,6 +54,31 @@ class OpenIdConfiguration {
     required this.requestUriParameterSupported,
   });
 
+  Map<String, dynamic> toJson() => <String, dynamic>{
+    "issuer" : this.issuer,
+    "jwks_uri" : this.jwksUri,
+    "authorization_endpoint" :  this.authorizationEndpoint,
+    "token_endpoint" :  this.tokenEndpoint,
+    "userinfo_endpoint" :  this.userInfoEndpoint,
+    "end_session_endpoint" : this.endSessionEndpoint,
+    "revocation_endpoint" : this.revocationEndpoint,
+    "registration_endpoint" : this.registrationEndpoint,
+    "mfa_challenge_endpoint" : this.mfaChallengeEndpoint,
+    "scopes_supported" :  this.scopesSupported,
+    "claims_supported" :  this.claimsSupported,
+    "grant_types_supported" : this.grantTypesSupported,
+    "response_types_supported" :  this.responseTypesSupported,
+    "response_modes_supported" :  this.responseModesSupported,
+    "check_session_iframe" : this.checkSessionIFrame,
+    "device_authorization_endpoint" : this.deviceAuthorizationEndpoint,
+    "token_endpoint_auth_methods_supported" :  this.tokenEndpointAuthMethodsSupported,
+    "id_token_signing_alg_values_supported" :  this.idTokenSigningAlgValuesSupported,
+    "subject_types_supported" :  this.subjectTypesSupported,
+    "code_challenge_methods_supported" :  this.codeChallengeMethodsSupported,
+    "api_endpoint" : this.apiEndpoints,
+    "request_uri_parameter_supported" :  this.requestUriParameterSupported,
+  };
+
   factory OpenIdConfiguration.fromJson(Map<String, dynamic> json) =>
       OpenIdConfiguration(
         document: json,
@@ -66,8 +91,7 @@ class OpenIdConfiguration {
         revocationEndpoint: json["revocation_endpoint"]?.toString(),
         registrationEndpoint: json["registration_endpoint"]?.toString(),
         mfaChallengeEndpoint: json["mfa_challenge_endpoint"]?.toString(),
-        deviceAuthorizationEndpoint:
-            json["device_authorization_endpoint"]?.toString(),
+        deviceAuthorizationEndpoint: json["device_authorization_endpoint"]?.toString(),
         scopesSupported:
             List<String>.from(json["scopes_supported"] as List<dynamic>),
         claimsSupported:

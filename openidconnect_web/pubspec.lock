@@ -103,9 +103,11 @@ packages:
   openidconnect_platform_interface:
     dependency: "direct main"
     description:
-      name: openidconnect_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: openidconnect_platform_interface
+      ref: HEAD
+      resolved-ref: "55a5e01911c768ee37c988f06a49da1a6fbef720"
+      url: "https://github.com/Bravo-XWB/openidconnect_flutter"
+    source: git
     version: "1.0.13"
   path:
     dependency: transitive
