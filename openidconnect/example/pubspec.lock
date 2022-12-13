@@ -204,7 +204,11 @@ packages:
       path: ".."
       relative: true
     source: path
+<<<<<<< HEAD
     version: "1.0.25"
+=======
+    version: "1.0.23"
+>>>>>>> 3d050bf (Upgrade flutter_secure_storage & Bump to 1.0.23)
   openidconnect_platform_interface:
     dependency: transitive
     description:
