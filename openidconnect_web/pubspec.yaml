@@ -16,11 +16,7 @@ dependencies:
     git:
       url: https://github.com/Bravo-XWB/openidconnect_flutter
       path: openidconnect_platform_interface
-<<<<<<< HEAD
-      version: ^1.0.11
-=======
       version: ^1.0.13
->>>>>>> 4D-Technologies-main
 
 dev_dependencies:
   flutter_lints: ^2.0.1
